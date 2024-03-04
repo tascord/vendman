@@ -8,7 +8,7 @@ pub enum Dependency {
     DepWithHash(String, String),
 }
 
-#[derive(Serialize, Deserialize, Debug, Clone)]
+#[derive(Serialize, Deserialize, Debug, Clone, Default)]
 pub struct Config {
     pub version: String,
     pub dependencies: HashMap<String, Dependency>,
